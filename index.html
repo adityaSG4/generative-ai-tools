@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Aditya</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.8/purify.min.js"></script>
+    <script src="https://kit.fontawesome.com/c72db511fe.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <section id="mainHomePage" class="mainHomePagecss">
+        <div class="sidebar d-none">
+            <div class="sidebar-header">
+                <img class="logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj6MutLQPbQVlx4o79S3DeoysIUx6dwFdV57iIztp1K55jJeFMPXbRVuYoGAn1LBn7mIK3U50exFG-E3NNs-4crJvL6zngKBOkrp7f029UIu73-v45oBzP_ofO1T3ztogAxQiI4RCT7ZFxqPBqidc5xCHtyuqjljrUKsbIzUYcPYYn9ssMhyphenhyphenFCmyLx7Acd/s16000/Copy%20of%20%5BOriginal%20size%5D%20Untitled%20(500%20x%20200%20px)%20(2).png" alt="logo">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="#mainHomePage">Home</a></li>
+                <li><a href="#">Todolist</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Setting</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="toggle-switch">
+                <input type="checkbox" id="mode-toggle" class="toggle-input">
+                <label for="mode-toggle" class="toggle-label">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <header class="header d-block">
+                <i class="fa fa-bars" id="faBarsId" aria-hidden="true"></i>
+                <h1 class="mt-4 mb-2">Browse All Templates</h1>
+                <p class="">What would you like to create today?</p>
+                <form class="searchbox" id="searchCardForm">
+                    <input type="search" placeholder="Search" id="search" />
+                    <button type="submit" value="search" id="searchBtn" disabled>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </header>
+            <nav class="nav-fixed d-none">
+                <ul class="text-center">
+                    <li class="col-sm-3"><a href="#mainHomePage">Home</a></li>
+                    <li class="col-sm-3"><a href="#">Todolist</a></li>
+                    <li class="col-sm-3"><a href="#">Games</a></li>
+                </ul>
+            </nav>
+            <section class="templates" id="templates">
+
+                <div id="spinner" class="d-none spinner-border text-dark" role="status">
+                    <span class="sr-only">Loading....</span>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <section id="nextPage" class="nextPagecss">
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
